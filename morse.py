@@ -111,14 +111,14 @@ class Solution:
             #type message: string
             #return type: string
             message = message.upper()
-            e_msg = []
+            e_msg = ""
             for i in message:
                 if i == " ":
-                      e_msg.append(" ")
+                      e_msg += " "
                 else:
-                    e_msg.append(MORSE_CODE_DICT[i])
-                    e_msg.append(" ")
-            return(str(e_msg))
+                    e_msg += (MORSE_CODE_DICT[i])
+                    e_msg += " "
+            return(e_msg)
             pass
 
 def main():
